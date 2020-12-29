@@ -1,0 +1,30 @@
+Prerequisites:
+    - Install the Computer Vision SDK:
+      pip install --upgrade azure-cognitiveservices-vision-computervision
+    - Create folder and collect images: 
+      Create a folder called "resources" in your root folder.
+      Go to this website to download images:
+        https://github.com/Azure-Samples/cognitive-services-sample-data-files/tree/master/ComputerVision/Images
+      Add the following 7 images (or use your own) to your "resources" folder: 
+        faces.jpg, gray-shirt-logo.jpg, handwritten_text.jpg, landmark.jpg, 
+        objects.jpg, printed_text.jpg and type-image.jpg
+
+Run the entire file to demonstrate the following examples:
+    - Describe Image
+    - Categorize Image
+    - Tag Image
+    - Detect Faces
+    - Detect Adult or Racy Content
+    - Detect Color Scheme
+    - Detect Domain-specific Content (celebrities/landmarks)
+    - Detect Image Types (clip art/line drawing)
+    - Detect Objects
+    - Detect Brands
+    - Generate Thumbnail
+    - Batch Read File (recognize both handwritten and printed text) 
+    - Recognize Printed Text with OCR
+
+References:
+    - SDK: https://docs.microsoft.com/en-us/python/api/azure-cognitiveservices-vision-computervision/azure.cognitiveservices.vision.computervision?view=azure-python
+    - Documentaion: https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/index
+    - API: https://westus.dev.cognitive.microsoft.com/docs/services/5adf991815e1060e6355ad44/operations/56f91f2e778daf14a499e1fa
