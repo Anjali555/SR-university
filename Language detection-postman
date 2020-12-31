@@ -1,0 +1,21 @@
+
+Endpoint 
+===========
+
+https://cogsrv123.cognitiveservices.azure.com/contentmoderator/moderate/v1.0/ProcessText/DetectLanguage
+
+
+
+Headers 
+=============
+
+Content-Type = text/plain
+
+
+Body (data)
+
+==================
+
+木漏れ
+
+
