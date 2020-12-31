@@ -1,0 +1,20 @@
+import urllib
+import json
+import requests
+#from http.client import HTTPSConnection
+uri = 'https://cogsrv123.cognitiveservices.azure.com/'
+accessKey = 'ca347ebdddcc4c73b'
+def GetSentiment (documents):
+    path =  'https://cogsrv123.cognitiveservices.azure.com/text/analytics/v2.0/sentiment'      
+    headers = {'Ocp-Apim-Subscription-Key': accessKey}
+    #conn = HTTPSConnection (uri)
+    #body = json.dumps (documents)
+    response = requests.post ( path, headers=headers,json=documents)
+    return response
+documents = { 'documents': [
+{ 'id': '1', 'language': 'en', 'text': 'I had a horrible customer experience at your  store yesterday.' },
+{ 'id': '2', 'language': 'en', 'text': 'Your restaurant is great! I would love to visit it again in the future' }
+]}
+result = GetSentiment(documents)
+#sentiments = json.loads(result)["documents"]
+print(result.json())
