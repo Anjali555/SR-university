@@ -1,0 +1,24 @@
+user postman to try it out 
+
+=====================================
+
+1. Endpoint 
+
+endpoint + /text/analytics/v2.0/sentiment
+
+
+
+2. Headers 
+
+Headers - Ocp-Apim-Subscription-Key =  < subscription key > 
+        - Content-Type = application/json
+		
+		
+3. Body (Data) 
+
+
+
+{ 'documents': [
+{ 'id': '1', 'language': 'en', 'text': 'I had a horrible customer experience at your  store yesterday.' },
+{ 'id': '2', 'language': 'en', 'text': 'Your restaurant is great! I would love to visit it again in the future' }
+]}		
