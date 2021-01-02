@@ -1,0 +1,13 @@
+#STT
+#import azure.cognitiveservices.speech as speechsdk
+#speech_key, service_region = "3fa673755ce2459d8b48531c7c7a473f", "eastus"
+#speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
+#speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config)
+#result = speech_recognizer.recognize_once()
+#print(result)
+#TTS
+import azure.cognitiveservices.speech as speechsdk
+speech_key, service_region = "ca347ebdddcc4c73b558f3365f8dcc84", "westcentralus"
+speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
+speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config)
+result = speech_synthesizer.speak_text_async("I have a good news for of you, Today is the last day of your class for this week, so you don't need to bear Ajay anymore.").get()
